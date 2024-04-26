@@ -2,23 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
-
     <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
+      <h1>Let’s <span>work</span> together</h1>
+      <form class="work-form" autocomplete="off">
+        <input type="email" name="email" placeholder="clients@gmail.com" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" autofocus />
+        <input class = "work-form-comments" type="text" name="comments" placeholder="comments"/>
+        <button type="submit">Send</button>
+      </form>
+      <ul class="contacts list">
+        <li class="item">
+          <a class="link-contacts" href="lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+        <li class="item">
+          <a class="link-contacts" href="tel:+380 11 1111 11 11"
+            >+380 11 1111 11 11</a
+          >
+        </li>
+      </ul>
     </section>
-
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
-
     <script type="module" src="./main.js"></script>
   </body>
 </html>
