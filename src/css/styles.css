@@ -11,3 +11,11 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.work-form-email:valid {
+  border-color: green;
+}
+.work-form-email:invalid {
+  border-color: red;
+}
+

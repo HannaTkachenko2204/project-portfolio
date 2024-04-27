@@ -11,8 +11,12 @@
     <section>
       <h1>Let’s <span>work</span> together</h1>
       <form class="work-form" autocomplete="off">
-        <input type="email" name="email" placeholder="clients@gmail.com" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" autofocus />
-        <input class = "work-form-comments" type="text" name="comments" placeholder="comments"/>
+        <label>
+        <input class = "work-form-email" type="text" name="email" placeholder="clients@gmail.com" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"/>
+        <p class="work-form-succes">Succes!</p>
+        <p class="work-form-invalid">Invalid email, try again</p>
+        </label>
+        <input class = "work-form-comments" type="text" name="comment" placeholder="comments"/>
         <button type="submit">Send</button>
       </form>
       <ul class="contacts list">
