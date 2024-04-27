@@ -4,8 +4,8 @@ const commentsEl = document.querySelector('.work-form input[name=comment]');
 const succesEl = document.querySelector('.work-form-succes');
 const invalidEl = document.querySelector('.work-form-invalid')
 
-// succesEl.style.display = 'none';
-// invalidEl.style.display = 'none';
+succesEl.style.display = 'none';
+invalidEl.style.display = 'none';
 
 //const BASE_URL = 'https://portfolio-js.b.goit.study/api/';
 const localKey = 'work-form-state';
@@ -18,6 +18,14 @@ formEl.addEventListener(
   event => {
     formDataEl[event.target.name] = event.target.value;
     localStorage.setItem(localKey, JSON.stringify(formDataEl));
+   
+    if(emailEl.validity.valid) {
+        succesEl.style.display = 'block';
+        invalidEl.style.display = 'none';
+    } else {
+        succesEl.style.display = 'none';
+        invalidEl.style.display = 'block';
+    }
   }
 );
 

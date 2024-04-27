@@ -6,16 +6,22 @@
 */
 @import url('./reset.css');
 
+
+.work-together-title {
+  font-weight: 500;
+font-size: 64px;
+line-height: 1;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+color: #fafafa;
+}
+
 .work-form-comments {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.work-form-email:valid {
-  border-color: green;
-}
-.work-form-email:invalid {
-  border-color: red;
-}
 
+
+/* https://github.com/F-r-a-n-c-u-z/Projectus-06/pull/5 */
