@@ -9,11 +9,15 @@
 
 .work-together-title {
   font-weight: 500;
-font-size: 64px;
-line-height: 1;
-letter-spacing: -0.03em;
-text-transform: uppercase;
-color: #fafafa;
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fafafa;
+}
+
+.work-together-title-accent {
+  color: #ed3b44;
 }
 
 .work-form-comments {
