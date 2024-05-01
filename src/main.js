@@ -67,3 +67,87 @@ function fillFormFields() {
     commentsEl.value = formDataEl.comment || '';
   }
 }
+
+
+// // core version + navigation, pagination modules:
+// import Swiper from 'swiper';
+// import { Navigation } from 'swiper/modules';
+// // import Swiper and modules styles
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+
+// const swiper = new Swiper('.swiper-about', {
+//   modules: [Navigation],
+//   direction: 'horizontal',
+//   centeredSlides: false,
+//   loop: true,
+//   navigation: {
+//     nextEl: '.swiper-button-next-about-btn',
+//   },
+//   on: {
+//     resize: function () {
+//       const windowWidth = window.innerWidth;
+//       if (windowWidth <= 768) {
+//         this.params.slidesPerView = 2;
+//       } else if (windowWidth <= 1440) {
+//         this.params.slidesPerView = 3;
+//       } else {
+//         this.params.slidesPerView = 6;
+//       }
+//       this.update();
+//     },
+//   },
+// });
+
+
+
+// const accordions = document.querySelectorAll('.accordion');
+// accordions.forEach(accordion => {
+//   new Accordion(accordion);
+// });
+
+
+// const accordionItems = document.querySelectorAll('.about-con-list-iteam'); 
+
+  
+
+// document.addEventListener('DOMContentLoaded', function () {
+  
+
+//   function toggleAccordion() {
+//     this.classList.toggle('active');
+//     const content = this.querySelector('.about-con-list-iteam-id');
+//     content.style.display === 'block'
+//       ? (content.style.display = 'none')
+//       : (content.style.display = 'block');
+
+//     const arrow = this.querySelector('.arrow-up');
+//     arrow.classList.toggle('arrow-down');
+//   }
+
+//   accordionItems.forEach(item => {
+//     item.addEventListener('click', toggleAccordion);
+//   });
+
+//   for (let i = 1; i < accordionItems.length; i++) {
+//     const content = accordionItems[i].querySelector('.about-con-list-iteam-id');
+//     content.style.display = 'none';
+//   }
+// });
+
+/* <div class="about-skills swiper-about">
+    <ul class="about-skills-list swiper-wrapper">
+      <button class="about-skills-list-div swiper-slide">HTML/CSS</button>
+      <button class="about-skills-list-div swiper-slide">JavaScript</button>
+      <button class="about-skills-list-div swiper-slide">React</button>
+      <button class="about-skills-list-div swiper-slide">Node.js</button>
+      <button class="about-skills-list-div swiper-slide">React Native</button>
+      <button class="about-skills-list-div swiper-slide">Soft skills</button>
+    </ul>
+    <button class="swiper-button-next-about-btn" type="button">
+      <svg class="svg-button-next" width="40" height="40">
+        <use href="./img/icons/icon.svg#arrow-narrow-right"></use>
+      </svg>
+    </button>
+  </div>
+</section> */
